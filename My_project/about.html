@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="https://img2.freepng.ru/20180320/dfw/kisspng-web-development-computer-icons-website-web-design-website-save-icon-format-5ab16631d424b9.2926146215215754738689.jpg">
+</head>
+<body>
+    <!-- white back -->
+    <div class="white-back">
+            <!-- audio -->
+            <div class="audio">
+                <audio controls>
+                    <source src="./img/Christmas Hits - Jingle Bells (www.hotplayer.ru).mp3" type="audio/mpeg">
+                    </audio>
+            </div>
+            <!-- change background to snow -->
+            <div class="box-snow">
+                <div class="snow"><a id="snow" onclick="c()">Snow</a></div>
+            </div>
+            <!-- make background back -->
+            <div class="box-back">
+                <div class="back"><a id="snow-b" onclick="c2()">Back</a></div>
+            </div>
+            <!-- button home -->
+            <div class="box-home">
+                <div class="home"><a href="index.html">Home</a></div>
+            </div>
+            <!-- button about -->
+            <div class="box-about">
+                <div class="about"><a href="about.html">About</a></div>
+            </div>
+            <!-- button skills -->
+            <div class="box-skills">
+                <div class="skills"><a href="skills.html">Skills</a></div>
+            </div>
+            <!-- button contact -->
+            <div class="box-contact">
+                <div class="contact"><a href="cont.html">Contact</a></div>
+            </div>
+    </div>
+
+    <!-- white back -->
+    <div class="white">
+        <!-- text which in page -->
+        <div class='text'>
+            <span class="text-1">My full name is:</span><br>
+            <span class="text-2">Amatov</span><br>
+            <span class="text-3">Beksultan</span><br>
+            <span class="text-4">Dosmambetovich</span><br>
+        </div><br>
+        <!-- about me -->
+        <div class="about-me">
+            <h1>About me</h1>
+        </div>
+        <div class="me">
+            <!-- the text -->
+            <p>I am <span class="a">16</span>. I live in <span class="a">Bishkek</span>,<span class="a">Kyrgyzstan.</span>
+            I'm coding in <span class="a">Python</span> and creating a <span class="a">website.</span> My <span class="a">dream</span> is to become a professional <span class="a">programmer.</span></p>
+        </div>
+    </div>
+
+    
+    <!-- script changing background-image -->
+    <script>
+        function c() {
+            document.body.style.backgroundImage = "url('./img/snow.gif')";
+        }
+    </script>
+    <script>
+        function c2() {
+            document.body.style.backgroundImage = "url('./img/back_3.jpg')"
+  
+        }
+    </script>
+</body>
+</html>

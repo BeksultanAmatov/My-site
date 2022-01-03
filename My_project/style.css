@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Sigmar+One&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(./img/back_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -40px;
+    overflow: hidden;
+}
+.white-back {
+    width: 400px;
+    height: 100%;
+    background-color:#fff;
+    position: absolute;
+    right:0;
+}
+.box-snow {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #02426e;
+    top: 500px;
+    transition: 0.5s;
+}
+.box-snow:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.box-back {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #02426e;
+    top: 500px;
+    right: 0px;
+    transition: 0.5s;
+}
+.box-back:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.snow a {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer; 
+    color: #ffffff;
+    margin-left: 55px;
+    margin-top: 55px;
+}
+.back a {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer; 
+    color: #ffffff;
+    margin-left: 55px;
+    margin-top: 55px;
+}
+.audio {
+    width: 100%;
+    height: 110px;
+    background-color: #040138;
+}
+.audio audio {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.text {
+    position: absolute;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    font-size: 50px;
+    top: 180px;
+    left: -400px;
+    animation-name: move_name;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: #f4ec2d;
+    transition: 1s;
+}
+.text:hover {
+    font-size: 55px;
+}
+.text_2{
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    font-size: 85px;
+    top: -280px;
+    position:absolute;
+    animation-name: move_p;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    color: #f4ec2d;
+    transition: 1s;
+}
+.text_2:hover {
+    font-size: 90px;
+}
+.box-home {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #020c41;
+    top: 110px;
+    transition: 0.5s;
+}
+.box-home:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.home a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.box-about {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #011447;
+    top: 200px;
+    transition: 0.5s;
+}
+.box-about:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.about a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.box-skills {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #022251;
+    top: 300px;
+    transition: 0.5s;
+}
+.box-skills:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.skills a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.box-contact {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #032958;
+    top: 400px;
+    transition: 0.5s;
+}
+.box-contact:hover {
+    box-shadow: inset 0 0 0 23px #fff;
+}
+.contact a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+@keyframes move_name {
+    0%{
+        left: -400px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+@keyframes move_p {
+    0%{
+        top: -280px;
+        left: 100px;
+    }
+    100%{
+        top: 250px;
+        left: 100px;
+    }
+}
+@media only screen and (max-width: 740px) { 
+    h1 { font-size: 4.5em; }
+    h3 { font-size: 2.2em; }
+    h2 { display: block; text-align: center; }
+    #info { float: none; display: block; text-align: center; }
+    #photo {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    #w { padding: 20px 15px; }
+    p { padding: 0; }
+}

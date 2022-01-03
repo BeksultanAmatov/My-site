@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Sigmar+One&display=swap');
+body {
+    font-family: 'Erica One', cursive;
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+.main-text {
+    background: url(./img/FM-back.jpg);
+    font-size: 200px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+a.text:active,
+a.text:hover,
+.main-text a{
+    cursor:pointer;
+    text-decoration: none;
+    color: transparent !important;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css">
+    <title>Document</title>
+    <link rel="icon" href="https://img2.freepng.ru/20180320/dfw/kisspng-web-development-computer-icons-website-web-design-website-save-icon-format-5ab16631d424b9.2926146215215754738689.jpg">
+</head>
+<body>
+    <!-- white back -->
+    <div class="white-back">
+            <!-- audio -->
+            <div class="audio">
+                <audio controls>
+                    <source src="./img/Christmas Hits - Jingle Bells (www.hotplayer.ru).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <!-- change background to snow -->
+            <div class="box-snow">
+                <div class="snow"><a id="snow" onclick="c()">Snow</a></div>
+            </div>
+            <!-- make background back -->
+            <div class="box-back">
+                <div class="back"><a id="snow-b" onclick="c2()">Back</a></div>
+            </div>
+            <!-- button home -->
+            <div class="box-home">
+                <div class="home"><a href="index.html">Home</a></div>
+            </div>
+            <!-- button about -->
+            <div class="box-about">
+                <div class="about"><a href="about.html">About</a></div>
+            </div>
+            <div class="box-skills">
+                <div class="skills"><a href="skills.html">Skills</a></div>
+            </div>
+            <div class="box-contact">
+                <div class="contact"><a href="cont.html">Contact</a></div>
+            </div>
+            <div class="contact">
+                <p></p>
+            </div>
+    </div>
+    <!-- white back -->
+    <div class="white">
+        <!-- name -->
+        <p>HTML</p>
+        <!-- line -->
+        <div class="container">
+            <!-- percent -->
+            <div class="html">80%</div>
+        </div>
+        <!-- name -->
+        <p>CSS</p>
+        <!-- line -->
+        <div class="container">
+            <!-- percent -->
+            <div class="css">70%</div>
+        </div>
+        <!-- name -->
+        <p>JS</p>
+        <!-- line -->
+        <div class="container">
+            <!-- percent -->
+            <div class="js">40%</div>
+        </div>
+        <!-- name -->
+        <p>Python</p>
+        <!-- line -->
+        <div class="container">
+            <!-- percent -->
+            <div class="py">75%</div>
+        </div>
+    </div>
+
+    <!-- script changing background-image -->
+    <script>
+        function c() {
+            document.body.style.backgroundImage = "url('./img/snow.gif')";
+        }
+    </script>
+    <script>
+        function c2() {
+            document.body.style.backgroundImage = "url('./img/back_3.jpg')"
+  
+        }
+    </script>
+</body>
+</html>
